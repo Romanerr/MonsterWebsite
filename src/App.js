@@ -17,7 +17,7 @@ componentDidMount(){
   .then(users => this.setState({monsters:users}));
 }
 
-handleChange (e){this.setState ({searchField :e.target.value})}
+handleChange = (e) =>{this.setState ({searchField :e.target.value})}
 
 render(){
 
@@ -28,8 +28,9 @@ render(){
 
   return (
     <div className='App'>
+      <h1>Kittens of Gloomhaven</h1>
      <SearchBox
-       placeholder={'search monsters'} 
+       placeholder={'Search Kittens'} 
        handleChange={this.handleChange}
      />
 );
